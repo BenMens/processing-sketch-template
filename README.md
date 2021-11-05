@@ -8,6 +8,30 @@ App created from this template will run from VSCode and eclipse.
 
 ## Prerequisites
 
-- OpenJDK 8 (can be donloaded from [AdoptOpenJDK](https://adoptopenjdk.net/))
+- OpenJDK 8 (can be downloaded from [AdoptOpenJDK](https://adoptium.net/))
 - Maven (can be downloaded from [Apache Maven](https://maven.apache.org/download.cgi))
 
+## Build runnable jar
+
+  ```shell
+    mvn clean package
+  ```
+
+## Change target name
+
+In pom.xml change
+
+  ```xml
+    <name>sketch-template</name>
+  ```
+
+## Run runnable jar
+
+  ```shell
+    java -jar target/sketch-template.jar
+  ```
+
+Notes:
+
+- JVM 8 should be used.
+- If the target name is changed, the name of the .jar also changes.

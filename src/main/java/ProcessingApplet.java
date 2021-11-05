@@ -1,7 +1,7 @@
 import nl.benmens.processing.SharedPApplet;
 import nl.benmens.processing.PApplet;
 
-public class MyPApplet extends PApplet {
+public class ProcessingApplet extends PApplet {
 
 	PApplet applet = this;
 
