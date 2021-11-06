@@ -17,18 +17,20 @@ App created from this template will run from VSCode and eclipse.
     mvn clean package
   ```
 
-## Change target name
+## Change target name and version
 
 In pom.xml change
 
   ```xml
-    <name>sketch-template</name>
+  <groupId>my.groupId</groupId>
+  <artifactId>sketch-template</artifactId>
+  <version>0.0.0-SNAPSHOT</version>
   ```
 
 ## Run runnable jar
 
   ```shell
-    java -jar target/sketch-template.jar
+    java -jar target/sketch-template-0.0.0-SNAPSHOT-runnable.jar
   ```
 
 Notes:
