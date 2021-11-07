@@ -45,6 +45,12 @@ In pom.xml change
     mvn clean package
   ```
 
+## Run using Maven
+
+  ```shell
+    mvn exec:java
+  ```
+
 ## Run runnable jar
 
   ```shell
