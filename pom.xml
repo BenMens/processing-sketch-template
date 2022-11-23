@@ -11,15 +11,11 @@
       <id>libraries-repo</id>
       <url>file:///${project.parent.basedir}/libraries-repo</url>
     </repository>
-    
+
     <repository>
-      <id>github-benmens</id>
-      <url>https://maven.pkg.github.com/BenMens/artifacts</url>
-      <snapshots>
-        <enabled>true</enabled>
-        <updatePolicy>always</updatePolicy>
-      </snapshots>
-    </repository>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
+		</repository>
   </repositories>
 
   <properties>
@@ -30,9 +26,9 @@
 
   <dependencies>
     <dependency>
-      <groupId>nl.benmens</groupId>
-      <artifactId>processing-bridge</artifactId>
-      <version>4.0.1-SNAPSHOT</version>
+        <groupId>com.github.BenMens</groupId>
+        <artifactId>processing-bridge</artifactId>
+        <version>4.0.1-SNAPSHOT</version>
     </dependency>
 
     <dependency>

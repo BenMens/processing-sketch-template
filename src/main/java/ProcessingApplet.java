@@ -19,7 +19,7 @@ public class ProcessingApplet extends PApplet {
 
 		logger.info(os);
 
-		if (os.equals("Mac OS X")) {
+		if (os.equals("Mac OS X") || os.equals("Linux")) {
 			// Mac OS X only supports the default renderer
 			size(800, 600);
 		} else {
