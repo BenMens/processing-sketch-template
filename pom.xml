@@ -8,14 +8,9 @@
 
   <repositories>
     <repository>
-      <id>libraries-repo</id>
-      <url>file:///${project.parent.basedir}/libraries-repo</url>
-    </repository>
-
-    <repository>
       <id>jitpack.io</id>
       <url>https://jitpack.io</url>
-		</repository>
+    </repository>
   </repositories>
 
   <properties>
@@ -26,9 +21,9 @@
 
   <dependencies>
     <dependency>
-        <groupId>com.github.BenMens</groupId>
-        <artifactId>processing-bridge</artifactId>
-        <version>4.0.1-SNAPSHOT</version>
+      <groupId>com.github.BenMens</groupId>
+      <artifactId>processing-bridge</artifactId>
+      <version>4.0.1-SNAPSHOT</version>
     </dependency>
 
     <dependency>
