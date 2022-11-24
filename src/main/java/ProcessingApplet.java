@@ -15,16 +15,9 @@ public class ProcessingApplet extends PApplet {
 		// initialize the bridging logic
 		PAppletProxy.setSharedApplet(this);
 
-		String os = System.getProperty("os.name");
+		logger.info("App started");
 
-		logger.info(os);
-
-		if (os.equals("Mac OS X") || os.equals("Linux")) {
-			// Mac OS X only supports the default renderer
-			size(800, 600);
-		} else {
-			size(800, 600, P2D);
-		}
+		size(800, 600);
 	}
 
 	public void setup() {
