@@ -9,7 +9,7 @@ public class ProcessingApplet extends PApplet {
 
 	private Logger logger = LogManager.getLogger(ProcessingApplet.class);
 
-	Renderer drawer = new Renderer();
+	Renderer renderer = new Renderer();
 
 	public void settings() {
 		// initialize the bridging logic
@@ -24,7 +24,7 @@ public class ProcessingApplet extends PApplet {
 	}
 
 	public void draw() {
-		drawer.doDraw();
+		renderer.doDraw();
 	}
 
 	// ####################################################
