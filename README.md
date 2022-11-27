@@ -8,7 +8,7 @@ App created from this template will run from VSCode and eclipse.
 
 ## Prerequisites
 
-- OpenJDK 17
+- JDK 17
 - Maven
 
 ## Change target name and version
@@ -39,7 +39,6 @@ In pom.xml change
     java -jar target/sketch-template-0.0.0-SNAPSHOT-runnable.jar
   ```
 
-Notes:
+## Notes
 
-- JVM 17 should be used.
 - If the target name is changed, the name of the .jar also changes.
