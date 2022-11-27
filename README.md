@@ -18,7 +18,7 @@ In pom.xml change
   ```xml
   <groupId>my.groupId</groupId>
   <artifactId>sketch-template</artifactId>
-  <version>0.0.0-SNAPSHOT</version>
+  <version>4.0.1-SNAPSHOT</version>
   ```
 
 ## Build runnable jar
