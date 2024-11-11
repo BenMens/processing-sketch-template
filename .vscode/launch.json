@@ -8,7 +8,7 @@
             "type": "java",
             "name": "Launch ProcessingApplet",
             "request": "launch",
-            "mainClass": "ProcessingApplet",
+            "mainClass": "nl.processingproject.ProcessingApplet",
             "projectName": "sketch-template"
         }
     ]

@@ -1,3 +1,5 @@
+package nl.processingproject;
+
 import nl.benmens.processing.PAppletProxy;
 
 import org.apache.logging.log4j.LogManager;
@@ -9,8 +11,9 @@ public class ProcessingApplet extends PApplet {
 
 	private Logger logger = LogManager.getLogger(ProcessingApplet.class);
 
-	Renderer renderer = new Renderer();
+	Renderer appRenderer = new Renderer();
 
+	@Override
 	public void settings() {
 		// initialize the bridging logic
 		PAppletProxy.setSharedApplet(this);
@@ -20,24 +23,28 @@ public class ProcessingApplet extends PApplet {
 		size(800, 600);
 	}
 
+	@Override
 	public void setup() {
+		// Enter setup code here
 	}
 
+	@Override
 	public void draw() {
-		renderer.doDraw();
+		appRenderer.doDraw();
 	}
 
 	// ####################################################
 	// Application startup. Do not change after this lines
 	// ####################################################
-	static public void main(String[] passedArgs) {
+	public static void main(String[] passedArgs) {
+		Object o = new Object() {
+		};
+
 		if (passedArgs != null) {
-			PApplet.main(new Object() {
-			}.getClass().getEnclosingClass(), passedArgs);
+			PApplet.main(o.getClass().getEnclosingClass(), passedArgs);
 		} else {
-			PApplet.main(new Object() {
-			}.getClass().getEnclosingClass());
+			PApplet.main(o.getClass().getEnclosingClass());
 		}
 	}
-	
+
 }

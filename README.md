@@ -8,18 +8,24 @@ App created from this template will run from VSCode and eclipse.
 
 ## Prerequisites
 
-- JDK 17
+- JDK 17+
 - Maven
 
 ## Change target name and version
 
-In pom.xml change
+In pom.xml update
 
   ```xml
-  <groupId>my.groupId</groupId>
+  <groupId>nl.processingproject</groupId>
   <artifactId>sketch-template</artifactId>
-  <version>4.0.1-SNAPSHOT</version>
-  ```
+  <version>4.3.3-SNAPSHOT</version>
+```
+
+In pom.xml update the mainClass
+
+```xml
+  <mainClass>nl.processingproject.ProcessingApplet</mainClass>
+```
 
 ## Build runnable jar
 
@@ -36,7 +42,7 @@ In pom.xml change
 ## Run runnable jar
 
   ```shell
-    java -jar target/sketch-template-0.0.0-SNAPSHOT-runnable.jar
+    java -jar target/sketch-template-4.3.3-SNAPSHOT-runnable.jar
   ```
 
 ## Notes
